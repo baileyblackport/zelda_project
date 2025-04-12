@@ -1,0 +1,308 @@
+
+.skip-link{
+    position: absolute;
+    top: -90px;
+    font-size: large;
+    padding: 3%;
+    border: darkslategrey 2px solid;
+    color:black;
+    background-color: antiquewhite;
+    height: 20px;   
+}
+
+.skip-link:focus {
+    top: 35px;
+    font-size: x-large;
+    padding: 3%;
+    border: darkslategrey 2px solid;
+    color:black;
+    background-color: bisque;
+    height: 20px;
+    margin-left: 10%;
+}
+
+
+body{
+    background-image: url("images/botw_home.jpg");
+    background-color: rgb(43, 73, 68);
+    color:bisque;
+    margin: 0;
+}
+
+
+.zelda_logo{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.tabs ul {
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.14);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 2% 5% 2% 5%;
+    margin: 0%;
+}
+
+li a {
+    text-decoration: none;
+    color:bisque;
+    font-weight: bold;
+}
+
+li a.active {
+    text-decoration: underline;
+    color:bisque;
+}
+
+li a:focus {
+    outline: 2px solid #7fa08a;
+    text-align: center;
+}
+
+#main_home {
+    background-image: url("../images/botw_home.jpg");
+    background-size:cover;
+    background-position:35% 75%;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: darkslategrey; 
+}
+
+iframe {
+    height: 11%;
+}
+
+#main_home h1 {
+    margin: 5% 2% 0% 2%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.459);
+}
+
+#main_home h2 {
+    background-color: rgba(255, 255, 255, 0.459);
+    font-size: large;
+    margin-top: 0%;
+    padding: 2% 2% 0% 2%;
+    width: 100%;
+}
+
+
+footer {
+    background-color: #222; 
+    color: #ddd; 
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.footer_credits {
+    margin: 10px 0;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_credits a {
+    color: red;
+    font-weight: bold;
+}
+
+.footer_credits a:hover {
+    text-decoration: underline;
+}
+
+.tab-menu {
+    text-align: center;
+    padding: 5%;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background:rgb(97, 97, 97);
+    color: rgb(247, 233, 215);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background:rgb(39, 94, 128);
+    color: rgb(247, 233, 215);
+}
+
+.tab-content {
+    display: none;
+}
+
+#characters_container{
+    background-color: rgb(34, 56, 56);
+}
+
+#characters {
+    display: block;
+}
+
+
+.character_title{
+   justify-items: center;
+   margin: 5%;
+   text-align: center;
+   color:bisque;
+}
+
+.character_title p{
+    font-size: larger;
+}
+
+.character_profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:stretch;
+    overflow: hidden;
+    border: #7fa08a ridge 10px;
+    background-color: #4d6155;
+    margin: 5%;
+}
+
+
+.character_profile img{
+    width: 100%;
+    grid-column: 2/3;
+    justify-self: center;
+}
+.character_profile .zelda_image{
+    width: 150%;
+    justify-self: center;
+}
+
+.character_profile h2{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+
+.character_profile p{
+    text-align: center;
+    grid-column: 1/-1;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+
+.beast{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    border: #7fa08a ridge 10px;
+    background-color: #4d6155;
+    margin: 5%;
+
+}
+
+
+.beast img{
+    grid-column: 2/3;
+    justify-items: center;
+    width: 100%;
+}
+
+.beast p {
+    grid-column: 1/-1;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.beast h2{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.main_weapons{
+    margin: 4%;
+
+}
+
+.weapons_top{
+    text-align: center;
+    margin: 3%;
+}
+
+.weapon_card{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    border: #7fa08a ridge 10px;
+    background-color: #4d6155;
+    margin: 10% 5% 0% 5%;
+}
+
+.weapon_category img{
+    width: 100%;
+}
+
+.weapon_category {
+    background-color:rgb(34, 56, 56);
+    background-image: url("../images/dark_green.jpg");
+}
+
+.weapon_category .master_image{
+    width: 40%;
+}
+
+.weapon_category .ancient_image{
+    width: 60%;
+}
+.weapon_category .hylian_image{
+    width: 80%;
+}
+.weapon_category h2{
+    padding: 6% 0% 0% 5%;
+    margin-top: 0;
+    text-align: center;
+}
+.weapon_card p{
+    text-align: center;
+}
+
+
+#main_places h1{
+text-align: center;
+}
+
+.image_container p{
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 30%;
+}
+
+.image_container img{
+    width: 80%;
+    height: 50%;
+    border: #7fa08a ridge 10px;
+    background-color: #4d6155;
+}
+
+.image_container{
+    padding-left: 9%;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
