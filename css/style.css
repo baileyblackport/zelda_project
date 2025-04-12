@@ -266,6 +266,17 @@ footer {
     width: 60%;
 }
 
+.weapon_category .claymore_image{
+    width: 40%;
+}
+
+.weapon_category .biggoron_image{
+    width: 50%;
+}
+
+.weapon_category .royal_bow_image {
+    width: 40%;
+}
 .weapon_category h2{
     padding: 6% 0% 0% 5%;
     margin-top: 0;
@@ -293,9 +304,8 @@ text-align: center;
 }
 
 .image_container{
-    padding: 9% 10% 9% 5%;
+    padding: 9% 10% 9% 2%;
 }
-
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
