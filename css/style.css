@@ -94,11 +94,29 @@ iframe {
 
 
 footer {
-    background-color: #222; 
-    color: #ddd; 
+    background-color: #3f3f3f; 
+    color: antiquewhite;
     text-align: center;
     padding: 20px;
     font-size: 12px;
+}
+
+.site_footer{
+    background-color: #3f3f3f; 
+    color: antiquewhite;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 2px solid #d1b88d; /* Adds a nice golden divider */
+}
+
+.footer_links{
+    line-height: 1.8;
+}
+
+.footer_links a {
+    color: antiquewhite;
+    font-weight: bold;
 }
 
 .footer_credits {
@@ -107,6 +125,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .footer_credits a {
     color: red;
@@ -143,7 +162,7 @@ footer {
 }
 
 #characters_container{
-    background-color: rgb(34, 56, 56);
+    background-image: url("../images/dark_green.jpg");
 }
 
 #characters {
@@ -298,7 +317,7 @@ text-align: center;
 
 .image_container img{
     width: 100%;
-    height: 80%;
+    height: 70%;
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
 }
@@ -306,9 +325,91 @@ text-align: center;
 .image_container{
     padding: 9% 10% 9% 2%;
 }
+
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (min-width: 800px){
 
+    .tabs ul {
+        font-size: 40px;
+    }
+
+    body{
+        font-size: xx-large;
+    }
+
+    #main_home h2{
+        font-size: xxx-large;
+    }
+
+    .iframe{
+        border-radius: 12px;
+        height: 352;
+        width: 100%;
+    }
+
+    footer{
+        font-size: larger;
+    }
+
+    .tab-button{
+        font-size: larger;
+        margin: 4%;
+        padding: 3%;
+    }
+
+    .character_profile{
+        border: #7fa08a ridge 25px;
+    }
+
+    .character_title h1{
+        font-size: 75px;
+    }
+    .character_title p{
+        font-size: 50px;
+    }
+
+    .character_profile h2{
+        font-size: 75px;
+    }
+    .character_profile p{
+        font-size: 50px;
+    }
+
+    .beast h2{
+        font-size: 75px;
+    }
+    .beast p{
+        font-size: 50px;
+        text-align: center;
+    }
+    .weapons_title{
+        font-size: 75px;
+    }
+
+    .title_description{
+        font-size: 50px;
+    }
+
+    .weapon_category h2 {
+        font-size: 75px;
+    }
+
+    .weapon_card h3{
+        font-size: 50px;
+    }
+
+    .weapon_card p{
+        font-size: 40px;
+    }
+
+    .weapon_card{
+        border: #7fa08a ridge 25px;
+    }
+    .image_container img{
+        border: #7fa08a ridge 25px;
+    }
+}
