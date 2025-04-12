@@ -250,7 +250,7 @@ footer {
 }
 
 .weapon_category img{
-    width: 50%
+    width: 100%;
 }
 .weapon_category {
     background-color:rgb(34, 56, 56);
@@ -264,6 +264,9 @@ footer {
     width: 70%;
 }
 
+.weapon_category .ancient_image{
+    width: 60%;
+}
 
 .weapon_category h2{
     padding: 6% 0% 0% 5%;
@@ -295,7 +298,6 @@ text-align: center;
 .image_container{
     padding-left: 9%;
 }
-
 
 
 .gallery{
