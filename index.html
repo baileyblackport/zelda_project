@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="main_home" class="skip-link" lang="en">Skip to Main Content</a>
+        <a href=#main_home class="skip-link" lang="en">Skip to Main Content</a>
         <img src="images/header.png" class="zelda_logo" alt="Zelda Breath of the Wild Logo">
         <nav>
         <div class="tabs">
@@ -25,17 +25,29 @@
                 <li>
                     <a href="places.html">Places</a>
                 </li>
-                <li>
-                    <a href="music.html">Music</a>
-                </li>
             </ul>
         </div>
         </nav>
     </header>
-    <main class="main_home">
+    <main id=main_home>
         <h1 class="home_title">Welcome to the World of Breath of the Wild!</h1>
-        <img src="images/botw_home.jpg" class="link_looking" alt="Link standing on a cliff looking out">
         <h2 class="home_subtitle">Explore the world of Breath of the Wild- It's characters, weapons, music, and breathtaking landscapes.</h2>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2jlwHvLoQlP3iSX4639fET?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </main>
+    <footer>
+        <p class="footer_credits">
+            This fan site is not affiliated with, endorsed by, or sponsored by Nintendo.  
+            All trademarks, game content, and images are the property of Nintendo.  
+            This site is for informational and entertainment purposes only.  
+        </p>
+        <p class="footer_credits">
+            Some images and assets are sourced from <a href="https://www.zelda.com/breath-of-the-wild/" target="_blank">Nintendo</a>  
+            and fan contributors. If you are the owner of any material and would like it removed, please contact me.  
+        </p>
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+        <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
 </body>
 </html>
