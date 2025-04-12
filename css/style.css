@@ -283,20 +283,18 @@ text-align: center;
 .image_container p{
     text-align: center;
     margin-top: 0%;
-    margin-bottom: 30%;
 }
 
 .image_container img{
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 80%;
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
 }
 
 .image_container{
-    padding-left: 9%;
+    padding: 9% 10% 9% 5%;
 }
-
 
 .gallery{
     display: grid;
