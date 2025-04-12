@@ -252,6 +252,7 @@ footer {
 .weapon_category img{
     width: 100%;
 }
+
 .weapon_category {
     background-color:rgb(34, 56, 56);
     background-image: url("../images/dark_green.jpg");
@@ -259,9 +260,6 @@ footer {
 
 .weapon_category .master_image{
     width: 40%;
-}
-.weapon_category .biggoron_image{
-    width: 70%;
 }
 
 .weapon_category .ancient_image{
