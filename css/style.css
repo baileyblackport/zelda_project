@@ -222,6 +222,10 @@ footer {
     justify-self: center;
 }
 
+.character_profile .mipha_image{
+    padding-top: 20%;
+}
+
 .character_profile .revali_image{
     padding-top: 20%;
     padding-right: 5%;
@@ -230,10 +234,7 @@ footer {
 .character_profile .hestu_image{
     width: 160%;
 }
-.character_profile .impa_image{
-    padding-top: 20%;
-    width: 110%;
-}
+
 .character_profile_different .sidon_image{
     padding-top: 20%;
     width: 120%;
@@ -298,6 +299,8 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
+    margin-top: 0%;
+    text-align: center;
 }
 
 .beast h2{
@@ -326,6 +329,8 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
+    margin-top: 0%;
+    text-align: center;
 }
 
 .beast_different h2{
