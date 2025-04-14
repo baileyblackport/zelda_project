@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
     <title>Hyrule Gallery</title>
 </head>
 <body>
@@ -34,8 +34,8 @@
         <h1>Beautiful Places in Hyrule</h1>
         <div class="gallery">
             <div class="image_container">
-                <a href="images/satori_mountain.jpg" data-lightbox="gallery" data-title="Satori Mountain">
-                    <img src="images/satori_mountain.jpg" class="satori_image" alt="Satori Mountain">
+                <a href="images/satori_mountain.jpg" data-lightbox="gallery" data-title="Satori Mountain" data-alt="Satori Mountain">
+                    <img src="images/satori_mountain.jpg" width = "200" class="satori_image" alt="Satori Mountain">
                 </a>
               <p>Satori Mountain</p>
             </div>
@@ -48,7 +48,7 @@
             </div>
             
             <div class="image_container">
-                <a href="images/thundra_plateau.jpg" data-lightbox="gallery" data-title="Thundra Plateau">
+                <a href="images/thundra_plateau.jpg" target="blank"  data-lightbox="gallery" data-title="Thundra Plateau">
                     <img src="images/thundra_plateau.jpg" class="thundra_image" alt="Thundra Plateau">
                 </a>
 
@@ -56,20 +56,20 @@
             </div>
 
             <div class="image_container">
-                <a href="images/dueling_peaks.jpg" data-lightbox="gallery" data-title="Dueling Peaks">
+                <a href="images/dueling_peaks.jpg" target="blank" data-lightbox="gallery" data-title="Dueling Peaks">
                   <img src="images/dueling_peaks.jpg" class="dueling_image" alt="Dueling Peaks">
                 </a>
                 <p>Dueling Peaks</p>
             </div>
 
             <div class="image_container">
-            <a href="images/korok_forest.jpg" data-lightbox="gallery" data-title="Korok Forest">
+            <a href="images/korok_forest.jpg" target="blank" data-lightbox="gallery" data-title="Korok Forest">
                 <img src="images/korok_forest.jpg" class="korok_image" alt="Korok Forest">
             </a>
                 <p>Korok Forest</p>
             </div>
 
-            <div class="image_container">
+            <div class="image_container" target="blank"  data-lightbox="gallery">
                 <a href="images/darunia_lake.jpg" data-lightbox="gallery" data-title="Darunia Lake">
                     <img src="images/darunia_lake.jpg" class="darunia_image" alt="Darunia Lake">
                 </a>
@@ -77,21 +77,20 @@
           </div>
 
           <div class="image_container">
-            <a href="images/zoras_domain.jpg" data-lightbox="gallery" data-title="Zora's Domain">
+            <a href="images/zoras_domain.jpg" target="blank"  data-lightbox="gallery" data-title="Zora's Domain">
                 <img src="images/zoras_domain.jpg" class="zoras_image" alt="Zora's Domain">
             </a>
             <p>Zora's Domain</p>
         </div>
 
         <div class="image_container">
-            <a href="images/fairy_fountain.jpg" data-lightbox="gallery" data-title="Fairy Fountain">
+            <a href="images/fairy_fountain.jpg" target="blank"  data-lightbox="gallery" data-title="Fairy Fountain">
                 <img src="images/fairy_fountain.jpg" class="fairy_image" alt="Fairy Fountain">
             </a>
             <p>Great Fairy Fountain</p>
+        </div>
     </div>
-    </main>
-    <script src="js/lightbox.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+        </main>
     <footer class="site_footer">
         <div class="footer_links">
             <p><a href="https://www.youtube.com/watch?v=zw47_q9wbBE&ab_channel=NintendoofAmerica" target="_blank">The Legend of Zelda: Breath of the Wild – Official Trailer</a></p>
@@ -99,4 +98,11 @@
         </div>
     </footer>
 </body>
+<script src="dist/js/lightbox.js"></script>
+<script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+  });
+</script>
 </html>

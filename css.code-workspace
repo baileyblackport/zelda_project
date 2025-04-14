@@ -5,9 +5,9 @@
 		},
 		{
 			"path": "images"
+		},
+		{
+			"path": "js"
 		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "css"
-	}
+	]
 }
