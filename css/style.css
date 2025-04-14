@@ -415,9 +415,8 @@ text-align: center;
     padding: 9% 10% 9% 2%;
 }
 
-.image_container :hover{
+.image_container:hover{
     transform:scale(1.2);
-    background:white;
     z-index: 2;
 }
 
