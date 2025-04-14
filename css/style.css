@@ -401,7 +401,7 @@ text-align: center;
 
 .image_container p{
     text-align: center;
-    margin-top: 6%;
+    margin-top: 2%;
 }
 
 .image_container img{
@@ -415,7 +415,7 @@ text-align: center;
     padding: 9% 10% 9% 2%;
 }
 
-.image_container img:hover{
+.image_container :hover{
     transform:scale(1.2);
     background:white;
     z-index: 2;
