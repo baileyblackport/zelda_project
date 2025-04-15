@@ -344,50 +344,65 @@ footer {
     margin: 4%;
 
 }
-
+.weapon_grid{
+    padding-top: 3%;
+}
 .weapons_top{
     text-align: center;
     margin: 3%;
     text-shadow: 2px 2px 20px rgb(19, 32, 32);
 }
 
+.weapon_tabs{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.weapon_tabs.active{
+    background: #13527a;
+    color: rgb(247, 233, 215);
+}
+
 .weapon_card{
-    display: flex;
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10%;
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
-    margin: 10% 5% 0% 5%;
+    padding: 5%;
+    margin: 5% 5% 0% 5%;
 }
 
-.weapon_category img{
+.weapon_card :last-of-type{
+    margin-bottom: 0%;
+}
+
+.weapon_category img{ 
     width: 100%;
 }
 .weapon_card .lynel_sword_image{
     width: 30%;
 }
 
-.weapon_category {
+#main_weapons {
     background-color:rgb(34, 56, 56);
     background-image: url("../images/dark_green.jpg");
 }
 
-.weapon_category .master_image{
+.weapon_card .master_image{
     width: 40%;
 }
 
-.weapon_category .ancient_image{
+.weapon_card .ancient_image{
     width: 60%;
 }
 
-.weapon_category .claymore_image{
+.weapon_card .claymore_image{
     width: 40%;
 }
 
-.weapon_category .biggoron_image{
+.weapon_card .biggoron_image{
     width: 50%;
 }
 
@@ -401,6 +416,13 @@ footer {
     text-align: center;
 }
 
+.weapon_card img{
+    width: 100%;
+}
+
+.weapon_card_different img{
+    width: 100%;
+}
 
 #main_places h1{
     font-size: 35px;
@@ -434,6 +456,27 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 10px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #e8ecee9a;; /* Set a background color */
+    color: #13527a;; /* Text color */
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #myBtn:hover {
+    background-color: #a2a1a187; /* Add a dark-grey background on hover */
+  }
+
 
 @media screen and (min-width: 800px){
 
@@ -478,7 +521,7 @@ footer {
 
     .tab-menu {
         text-align: center;
-        padding: 3% 5% 0% 5%;
+        padding: 0%;
     }
     
 
@@ -609,9 +652,6 @@ footer {
         display: flex;
     }
 
-    .weapon_category h2 {
-        font-size: 25px;
-    }
 
     .weapon_card h3{
         font-size: 25px;
@@ -622,6 +662,10 @@ footer {
         font-size: 20px;
     }
 
+    .weapon_tabs{
+        text-align: center;
+        padding: 0%
+    }
     .image_container img{
         border: #7fa08a ridge 25px;
     }

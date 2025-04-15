@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href= #main_weapons class="skip-link" lang="en">Skip to Main Content</a>
+        <a href=#main_weapons class="skip-link" lang="en">Skip to Main Content</a>
         <img src="images/header.png" class="zelda_logo" alt="Zelda Breath of the Wild Logo">
         <nav>
         <div class="tabs">
@@ -26,19 +26,20 @@
                     <a href="places.html" >Places</a>
                 </li>
             </ul>
-
         </div>
         </nav>
-    </header>
-    <main id="main_weapons">
         <div class="weapons_top">
             <h1 class="weapons_title">The Best Weapons in Hyrule</h1>
             <p class="title_description">From legendary swords to powerful bows, discover the weapons that will aid you in your quest to defeat Calamity Ganon!</p>
         </div>
+    </header>
+    <main id="main_weapons">
+        <div class="weapon_tabs">
+            <button class="tab-button active" onclick="showWeaponTab('melee')">Melee Weapons</button>
+            <button class="tab-button" onclick="showWeaponTab('bows')">Bows & Ranged</button>
+        </div>
 
-
-        <div class="weapon_category">
-            <h2>Melee Weapons</h2>
+        <div id="melee" class="weapon_tabs">
             <div class="weapon_grid">
                 <div class="weapon_card">
                     <img src="images/master_sword.png" class="master_image" alt="Master Sword">
@@ -58,7 +59,7 @@
                     <p><strong>Attack Power</strong>: 60</p>
                     <p class="weapon_description">A two-handed weapon with incredible damage output, perfect for taking down tough enemies.</p>
                 </div>
-                <div class="weapon_card">
+                <div class="weapon_card" id="different">
                     <img src="images/lynel_sword.png" class="lynel_sword_image" alt="Lynel Sword">
                     <h3>Lynel Sword</h3>
                     <p><strong>Attack Power</strong>: 58</p>
@@ -67,11 +68,10 @@
             </div>
         </div>
 
-        <div class="weapon_category">
-            <h2>Bows & Ranged</h2>
+        <div class="weapon_tabs" id="bows" style="display: none;">
             <div class="weapon_grid">
                 <div class="weapon_card">
-                    <img src="images/great_eagle_bow.png" alt="Great Eagle Bow">
+                    <img src="images/great_eagle_bow.png" class="eagle_image" alt="Great Eagle Bow">
                     <h3>Great Eagle Bow</h3>
                     <p><strong>Attack Power</strong>: 28 (or 48 with full pull)</p>
                     <p class="weapon_description">This bow is known for its long-range shots and is especially useful for aerial attacks.</p>
@@ -88,7 +88,7 @@
                     <p><strong>Attack Power</strong>: 38</p>
                     <p class="weapon_description">A bow favored by Hyrule's elite guards. Its fine craftsmanship and balanced build allow for precise shots with high damage—perfect for skilled archers.</p>
                 </div>
-                <div class="weapon_card">
+                <div class="weapon_card" id="different">
                     <img src="images/gaurd_bow.png" class="gaurd_bow_image" alt="Royal Guard's Bow">
                     <h3>Royal Guard's Bow</h3>
                     <p><strong>Attack Power</strong>: 60</p>
@@ -97,6 +97,39 @@
             </div>
         </div>
     </main>
+    <script>
+        function showWeaponTab(tab) {
+            document.getElementById("melee").style.display = tab === "melee" ? "block" : "none";
+            document.getElementById("bows").style.display = tab === "bows" ? "block" : "none";
+    
+            // Update active button styling
+            document.querySelectorAll(".weapon_tabs .tab-button").forEach(button => button.classList.remove("active"));
+            document.querySelector(`.weapon_tabs button[onclick="showWeaponTab('${tab}')"]`).classList.add("active");
+        }
+    </script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  
     <footer class="site_footer">
         <div class="footer_links">
             <p><a href="https://www.youtube.com/watch?v=zw47_q9wbBE&ab_channel=NintendoofAmerica" target="_blank">The Legend of Zelda: Breath of the Wild – Official Trailer</a></p>

@@ -33,6 +33,7 @@
             <p>Discover my top favorite heroes and foes of Breath of the Wild</p>
         </div>
     </header>
+
     <main id="characters_container">
             <div class="tab-menu">
                 <button class="tab-button active" onclick="showTab('characters')">Noble Characters</button>
@@ -131,11 +132,35 @@
                 document.querySelector(`[onclick="showTab('${tab}')"]`).classList.add("active");
             }
         </script>
+
+        
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
     <footer class="site_footer">
         <div class="footer_links">
             <p><a href="https://www.youtube.com/watch?v=zw47_q9wbBE&ab_channel=NintendoofAmerica" target="_blank">The Legend of Zelda: Breath of the Wild – Official Trailer</a></p>
             <p> <a href="https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/?srsltid=AfmBOoqMJUKaNfdbPKFyKcvXLT7IXQmYI71zcPKlgQ7kZmDFsiBTGT5R" target="_blank">Buy on Nintendo's Official Website</a></p>
         </div>
     </footer>
+    
 </body>
 </html>
