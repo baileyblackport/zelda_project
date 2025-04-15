@@ -91,7 +91,6 @@ iframe {
     font-size: large;
     margin-top: 0%;
     padding: 2% 2% 0% 2%;
-    width: 100%;
 }
 
 
@@ -344,9 +343,7 @@ footer {
     margin: 4%;
 
 }
-.weapon_grid{
-    padding-top: 3%;
-}
+
 .weapons_top{
     text-align: center;
     margin: 3%;
@@ -371,11 +368,7 @@ footer {
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
     padding: 5%;
-    margin: 5% 5% 0% 5%;
-}
-
-.weapon_card :last-of-type{
-    margin-bottom: 0%;
+    margin: 10% 10% 0% 10%;
 }
 
 .weapon_category img{ 
@@ -469,7 +462,6 @@ footer {
     color: #13527a;; /* Text color */
     cursor: pointer;
     padding: 10px; 
-    border-radius: 10px;
     font-size: 18px;
   }
   
