@@ -50,6 +50,7 @@ li a {
     text-decoration: none;
     color:bisque;
     font-weight: bold;
+    text-shadow: 2px 2px 20px rgb(19, 32, 32);
 }
 
 li a.active {
@@ -154,7 +155,7 @@ footer {
 }
 
 .tab-button.active {
-    background:rgb(39, 94, 128);
+    background:#13527a;
     color: rgb(247, 233, 215);
 }
 
@@ -173,9 +174,9 @@ footer {
 
 .character_title{
    justify-items: center;
-   margin: 5%;
    text-align: center;
    color:bisque;
+   text-shadow: 2px 2px 20px rgb(19, 32, 32);
 }
 
 .character_title p{
@@ -347,6 +348,7 @@ footer {
 .weapons_top{
     text-align: center;
     margin: 3%;
+    text-shadow: 2px 2px 20px rgb(19, 32, 32);
 }
 
 .weapon_card{
@@ -363,6 +365,9 @@ footer {
 
 .weapon_category img{
     width: 100%;
+}
+.weapon_card .lynel_sword_image{
+    width: 30%;
 }
 
 .weapon_category {
@@ -387,9 +392,10 @@ footer {
 }
 
 .weapon_category h2{
-    padding: 6% 0% 0% 5%;
-    margin-top: 0;
+    padding: 2%;
     text-align: center;
+    background-color: #13527a;
+    margin: 0%;
 }
 .weapon_card p{
     text-align: center;
@@ -397,7 +403,10 @@ footer {
 
 
 #main_places h1{
+    font-size: 35px;
     text-align: center;
+    margin: 3%;
+    text-shadow: 2px 2px 20px rgb(19, 32, 32);
 }
 
 .image_container p{
@@ -428,16 +437,29 @@ footer {
 
 @media screen and (min-width: 800px){
 
+
+.skip-link{
+    top: -200px;
+}
+
+    .zelda_logo{
+        width: 20%;
+        padding-left: 15%;
+    }
     .tabs ul {
-        font-size: 50px;
+        font-size: 25px;
     }
 
     body{
-        font-size: xxx-large;
+        font-size: 15px;
+    }
+
+    #main_home h1{
+        font-size: 35px;
     }
 
     #main_home h2{
-        font-size: xxx-large;
+        font-size: 25px;
     }
 
     .iframe{
@@ -447,23 +469,23 @@ footer {
     }
 
     footer{
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .site_footer{
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .tab-menu {
         text-align: center;
-        padding: 6% 5% 0% 5%;
+        padding: 3% 5% 0% 5%;
     }
     
 
     .tab-button{
-        font-size: 40px;
+        font-size: 25px;
         margin: 4% 5% 0% 5%;
-        padding: 3%;
+        padding: 2%;
     }
 
     .character_profile{
@@ -475,40 +497,71 @@ footer {
     }
 
     .character_title h1{
-        font-size: 75px;
+        font-size: 35px;
     }
     .character_title p{
-        font-size: 50px;
+        font-size: 25px;
     }
 
 
     .character_profile h2{
-        font-size: 75px;
+        font-size: 25px;
     }
     .character_profile p{
-        font-size: 50px;
+        font-size: 20px;
+    }
+
+    .character_profile .link_image {
+        width: 70%;
+    }
+
+    .character_profile .zelda_image {
+        width: 120%;
+    }
+
+    .character_profile .mipha_image {
+        width: 75%;
+        padding-top: 5%;
+    }
+
+
+    .character_profile .hestu_image {
+        width: 100%;
+    }
+
+    .character_profile .revali_image {
+        padding-top: 10%;
+        width: 80%;
     }
 
     .character_profile_different h2{
-        font-size: 75px;
+        font-size: 25px;
     }
+
+
+    .character_profile_different .sidon_image {
+        padding-top: 10%;
+        padding-right: 5%;
+        width: 75%;
+    }
+
     .character_profile_different p{
-        font-size: 50px;
+        font-size: 20px;
     }
 
     .beast h2{
-        font-size: 75px;
+        font-size: 25px;
     }
     .beast p{
-        font-size: 50px;
+        font-size: 20px;
         text-align: center;
     }
 
     .beast_different h2{
-        font-size: 75px;
+        font-size: 25px;
     }
     .beast_different p{
-        font-size: 50px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -518,31 +571,77 @@ footer {
     .beast_different{
         border: #7fa08a ridge 25px;
     }
+
+
+    .beast .ganon_image{
+        grid-column: 2/3;
+    }
+
+    .beast img{
+        width: 70%;
+        padding-top: 5%;
+        justify-self: center;
+    }
+
+    .beast_different img{
+        width: 70%;
+        padding-top: 5%;
+        justify-self: center;
+    }
     .weapons_title{
-        font-size: 75px;
+        font-size: 35px;
+        text-shadow: 2px 2px 20px rgb(19, 32, 32);
     }
 
     .title_description{
-        font-size: 50px;
+        font-size: 25px;
     }
 
-    .weapon_category h2 {
-        font-size: 75px;
-    }
-
-    .weapon_card h3{
-        font-size: 50px;
-    }
-
-    .weapon_card p{
-        font-size: 40px;
+    .weapon_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        overflow: hidden;
     }
 
     .weapon_card{
         border: #7fa08a ridge 25px;
-        margin: 10%;
+        display: flex;
     }
+
+    .weapon_category h2 {
+        font-size: 25px;
+    }
+
+    .weapon_card h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .weapon_card p{
+        font-size: 20px;
+    }
+
     .image_container img{
         border: #7fa08a ridge 25px;
+    }
+
+    .weapon_category .master_image {
+        width: 85%;
+    }
+
+    .weapon_category .claymore_image {
+        width: 62%;
+    }
+    .weapon_card .lynel_sword_image{
+        width: 65%;
+    }
+
+    .weapon_category .biggoron_image {
+        width: 100%;
+    }
+
+    .weapon_category .ancient_image {
+        width: 72%;
     }
 }
