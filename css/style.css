@@ -76,6 +76,10 @@ li a:focus {
     color: darkslategrey; 
 }
 
+.home_subtitle{
+    font-size: larger;
+}
+
 iframe {
     height: 11%;
 }
@@ -88,7 +92,6 @@ iframe {
 
 #main_home h2 {
     background-color: rgba(255, 255, 255, 0.459);
-    font-size: large;
     margin-top: 0%;
     padding: 2% 2% 0% 2%;
 }
@@ -129,7 +132,7 @@ footer {
 
 
 .footer_credits a {
-    color: red;
+    color: rgb(176, 180, 255);
     font-weight: bold;
 }
 
@@ -176,6 +179,7 @@ footer {
    text-align: center;
    color:bisque;
    text-shadow: 2px 2px 20px rgb(19, 32, 32);
+   margin: 2%;
 }
 
 .character_title p{
@@ -269,6 +273,10 @@ footer {
     margin-top: 0%;
 }
 
+#beasts{
+    display: grid;
+}
+
 
 .beast{
     display: grid;
@@ -284,7 +292,7 @@ footer {
 .beast img{
     grid-column: 2/3;
     justify-items: center;
-    width: 110%;
+    width: 100%;
     padding-top: 20%;
 }
 
@@ -494,7 +502,7 @@ footer {
     }
 
     #main_home h2{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .iframe{
@@ -522,6 +530,12 @@ footer {
         margin: 4% 5% 0% 5%;
         padding: 2%;
     }
+
+    #characters{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 
     .character_profile{
         border: #7fa08a ridge 25px;
@@ -583,6 +597,12 @@ footer {
     .character_profile_different p{
         font-size: 20px;
     }
+
+    #beasts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 
     .beast h2{
         font-size: 25px;
@@ -661,6 +681,7 @@ footer {
     .image_container img{
         border: #7fa08a ridge 25px;
     }
+
 
     .weapon_category .master_image {
         width: 85%;
