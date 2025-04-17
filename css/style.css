@@ -111,7 +111,6 @@ footer {
     text-align: center;
     font-size: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-top: 2px solid #d1b88d; /* Adds a nice golden divider */
 }
 
 .footer_links{
@@ -197,6 +196,7 @@ footer {
 }
 
 
+
 .character_profile h2{
     grid-column: 2/3;
     text-align: center;
@@ -218,10 +218,36 @@ footer {
     justify-self: center;
 }
 
+.character_profile_different{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:stretch;
+    overflow: hidden;
+    border: #7fa08a ridge 10px;
+    background-color: #4d6155;
+    margin: 10%;
+}
+
+.character_profile_different h2{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+
+.character_profile_different p{
+    text-align: center;
+    grid-column: 1/-1;
+    padding: 0% 5% 5% 5%;
+    margin-top: 0%;
+}
+
+
+
 .character_profile .link_image{
     padding-top: 5%;
     width: 110%;
 }
+
 .character_profile .zelda_image{
     width: 190%;
     justify-self: center;
@@ -231,17 +257,20 @@ footer {
     padding-top: 20%;
 }
 
-.character_profile .revali_image{
-    padding-top: 20%;
-    padding-right: 5%;
+.character_profile_different .revali_image{
+    padding-top: 30%;
+    padding-right: 25%;
     width: 130%;
 }
+
 .character_profile .hestu_image{
-    width: 160%;
+    width: 170%;
+    padding-left: 5%;
 }
 
 .character_profile_different .sidon_image{
     padding-top: 20%;
+    padding-right: 35%;
     width: 120%;
 }
 
@@ -264,6 +293,10 @@ footer {
 .sidon_name{
     grid-column: 2/3;
     text-align: center;
+}
+
+.hestu_name{
+    margin-top: 0%;
 }
 
 .character_profile_different p{
@@ -296,11 +329,6 @@ footer {
     padding-top: 20%;
 }
 
-.beast .ganon_image{
-    width: 100%;
-    grid-column: 1/-1;
-
-}
 
 
 .beast p {
@@ -315,6 +343,15 @@ footer {
 .beast h2{
     grid-column: 2/3;
     text-align: center;
+}
+
+.beast .ganon_image{
+    width: 100%;
+    grid-column: 1/-1;
+
+}
+.yiga_image{
+    padding-left: 12%;
 }
 
 .beast_different{
@@ -561,26 +598,26 @@ footer {
     }
 
     .character_profile .link_image {
-        width: 70%;
+        width: 110%;
     }
 
     .character_profile .zelda_image {
-        width: 120%;
+        width: 180%;
     }
 
     .character_profile .mipha_image {
-        width: 75%;
+        width: 100%;
         padding-top: 5%;
     }
 
 
     .character_profile .hestu_image {
-        width: 100%;
+        width: 180%;
     }
 
-    .character_profile .revali_image {
-        padding-top: 10%;
-        width: 80%;
+    .character_profile_different .revali_image {
+        padding-top: 20%;
+        width: 110%;
     }
 
     .character_profile_different h2{
@@ -589,9 +626,9 @@ footer {
 
 
     .character_profile_different .sidon_image {
-        padding-top: 10%;
-        padding-right: 5%;
-        width: 75%;
+        padding-top: 20%;
+        padding-right: 25%;
+        width: 110%;
     }
 
     .character_profile_different p{
@@ -627,21 +664,48 @@ footer {
         border: #7fa08a ridge 25px;
     }
 
+    .beast_different img{
+        justify-self: center;
+    }
 
     .beast .ganon_image{
-        grid-column: 2/3;
-    }
-
-    .beast .liz_image{
-        width: 100%;
+        width: 75%;
+        padding-left: 12%;
         padding-top: 10%;
     }
 
+    .lynel_name{
+        margin: 0%;
+    }
+
+    .beast .lynel_image{
+        padding-top: 60%;
+        width: 110%;
+    }
+
+    .beast_different .liz_image{
+        width: 190%;
+        padding-top: 60%;
+    }
+
+    .beast_different .monk_image{
+        width: 145%;
+    }
+
+    .beast .mol_image{
+        width: 130%;
+        padding-top: 60%;
+        padding-right: 30%;
+    }
+
+    .mol_name{
+        margin:0%;
+        justify-content: center;
+    }
 
     .beast img{
-        width: 70%;
-        padding-top: 10%;
-        justify-self: center;
+        width: 110%;
+        padding-top: 20%;
     }
 
     .weapons_title{
@@ -684,22 +748,28 @@ footer {
     }
 
 
-    .weapon_category .master_image {
-        width: 85%;
+    .weapon_card .master_image {
+        width: 70%;
+        padding: 0%;
+        margin-bottom: 0%;
     }
 
-    .weapon_category .claymore_image {
-        width: 62%;
+    .weapon_card .claymore_image {
+        width: 60%;
     }
     .weapon_card .lynel_sword_image{
-        width: 65%;
+        width: 66%;
     }
 
-    .weapon_category .biggoron_image {
-        width: 100%;
+    .weapon_card .biggoron_image {
+        width: 110%;
     }
 
     .weapon_category .ancient_image {
         width: 72%;
+    }
+
+    #main_places{
+        overflow-x: hidden;
     }
 }
