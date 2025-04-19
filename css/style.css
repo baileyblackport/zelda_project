@@ -88,12 +88,15 @@ iframe {
     margin: 5% 2% 0% 2%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.459);
+    padding-top: 1%;
 }
 
 #main_home h2 {
     background-color: rgba(255, 255, 255, 0.459);
     margin-top: 0%;
-    padding: 2% 2% 0% 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
 }
 
 
@@ -727,6 +730,10 @@ footer {
     .weapon_card{
         border: #7fa08a ridge 25px;
         display: flex;
+        justify-items: center;
+        justify-content:first baseline;
+        justify-self: center;
+        padding: 5%;
     }
 
 
@@ -747,26 +754,12 @@ footer {
         border: #7fa08a ridge 25px;
     }
 
-
-    .weapon_card .master_image {
-        width: 70%;
-        padding: 0%;
-        margin-bottom: 0%;
+    .weapon_card img{
+        height: 160px;
     }
 
-    .weapon_card .claymore_image {
-        width: 60%;
-    }
-    .weapon_card .lynel_sword_image{
-        width: 66%;
-    }
-
-    .weapon_card .biggoron_image {
-        width: 110%;
-    }
-
-    .weapon_category .ancient_image {
-        width: 72%;
+    .weapon_card .biggoron_image{
+        width: 100%;
     }
 
     #main_places{
