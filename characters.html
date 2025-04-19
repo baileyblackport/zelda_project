@@ -1,150 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Breath of the Wild Characters</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Breath of the Wild Characters</title>
 </head>
 <body>
-    <header>
-        <a href= #characters_container class="skip-link" lang="en">Skip to Main Content</a>
-        <img src="images/header.png" class="zelda_logo" alt="Zelda Breath of the Wild Logo">
-        <nav>
-        <div class="tabs">
-            <ul>
-                <li>
-                    <a href="index.html" >Home</a>
-                </li>
-                <li>
-                    <a href="characters.html" class="active" >Characters</a>
-                </li>
-                <li>
-                    <a href="weapons.html">Weapons</a>
-                </li>
-                <li>
-                    <a href="places.html">Places</a>
-                </li>
-            </ul>
+  <header>
+    <a href="#characters_container" class="skip-link" lang="en">Skip to Main Content</a>
+    <img src="images/header.png" class="zelda_logo" alt="Zelda Breath of the Wild Logo" />
+    <nav>
+      <div class="tabs">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html" class="active">Characters</a></li>
+          <li><a href="weapons.html">Weapons</a></li>
+          <li><a href="places.html">Places</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="character_title">
+      <h1>Meet the Faces of Hyrule</h1>
+      <p>Discover my top favorite heroes and foes of Breath of the Wild</p>
+    </div>
+  </header>
+
+  <main id="characters_container">
+    <div class="parallax">
+        <div class="parallax-text">
+    <div class="tab-menu">
+      <button class="tab-button active" onclick="showTab('characters')">Noble Characters</button>
+      <button class="tab-button" onclick="showTab('beasts')">Beasts/Enemies</button>
+    </div>
+
+    <!-- Noble Characters with Parallax Effect -->
+        <div id="characters" class="tab-content">
+          <div class="character_profile">
+            <img src="images/link.png" class="link_image" alt="Link" />
+            <h2>Link</h2>
+            <p>The hero of Hyrule, Link embarks on a journey to defeat Calamity Ganon.</p>
+          </div>
+
+          <div class="character_profile">
+            <img src="images/zelda.png" class="zelda_image" alt="Zelda" />
+            <h2 class="zelda_name">Zelda</h2>
+            <p>The princess of Hyrule, burdened with the task of sealing away Ganon.</p>
+          </div>
+
+          <div class="character_profile">
+            <img src="images/mipha.png" class="mipha_image" alt="Mipha" />
+            <h2>Mipha</h2>
+            <p>Mipha wields the power of healing through her special ability, Mipha’s Grace.</p>
+          </div>
+
+          <div class="character_profile">
+            <img src="images/hestu.png" class="hestu_image" alt="Hestu" />
+            <h2 class="hestu_name">Hestu</h2>
+            <p>A giant Korok with a love for dancing and maracas.</p>
+          </div>
+
+          <div class="character_profile_different">
+            <img src="images/revali.png" class="revali_image" alt="Revali" />
+            <h2>Revali</h2>
+            <p>A skilled Rito warrior with unmatched archery skills.</p>
+          </div>
+
+          <div class="character_profile_different">
+            <img src="images/sidon.png" class="sidon_image" alt="Sidon" />
+            <h2 class="sidon_name">Sidon</h2>
+            <p>The enthusiastic and courageous prince of the Zora.</p>
+          </div>
         </div>
-        </nav>
-        <div class="character_title">
-            <h1>Meet the Faces of Hyrule</h1>
-            <p>Discover my top favorite heroes and foes of Breath of the Wild</p>
-        </div>
-    </header>
+      </div>
+    </div>
 
-    <main id="characters_container">
-            <div class="tab-menu">
-                <button class="tab-button active" onclick="showTab('characters')">Noble Characters</button>
-                <button class="tab-button" onclick="showTab('beasts')">Beasts/Enemies</button>
-            </div>
-        
-            <!-- Noble Characters Section -->
-            <div id="characters" class="tab-content">
-                <div class="character_profile">
-                    <img src="images/link.png" class="link_image" alt="Link">
-                    <h2>Link</h2>
-                    <p>The hero of Hyrule, Link embarks on a journey to defeat Calamity Ganon.</p>
-                </div>
-        
-                <div class="character_profile">
-                    <img src="images/zelda.png" class="zelda_image" alt="Zelda">
-                    <h2 class="zelda_name">Zelda</h2>
-                    <p>The princess of Hyrule, burdened with the task of sealing away Ganon.</p>
-                </div>
-        
-
-                <div class="character_profile">
-                    <img src="images/mipha.png" class="mipha_image" alt="Mipha">
-                    <h2>Mipha</h2>
-                    <p>Mipha wields the power of healing through her special ability, Mipha’s Grace.</p>
-                </div>
-        
-                <div class="character_profile">
-                    <img src="images/hestu.png" class="hestu_image" alt="Hestu">
-                    <h2 class="hestu_name">Hestu</h2>
-                    <p>A giant Korok with a love for dancing and maracas.</p>
-                </div>
-
-                <div class="character_profile_different">
-                    <img src="images/revali.png" class="revali_image" alt="Revali">
-                    <h2>Revali</h2>
-                    <p>A skilled Rito warrior with unmatched archery skills.</p>
-                </div>
-        
-        
-                <div class="character_profile_different">
-                    <img src="images/sidon.png" class="sidon_image" alt="Sidon">
-                    <h2 class="sidon_name">Sidon</h2>
-                    <p>The enthusiastic and courageous prince of the Zora.</p>
-                </div>
-            </div>
-        
-            <!-- Beasts/Enemies Section -->
-
-            
-            <div id="beasts" class="tab-content" style="display: none;">
-                <div class="beast_grid">
+    <!-- Beasts/Enemies with Parallax Effect -->
+    <div class="parallax">
+      <div class="parallax-text">
+          <div id="beasts" class="tab-content" style="display: none;">
+            <div class="beast_grid">
                 <div class="beast">
-                    <img src="images/ganon.png" class="ganon_image" alt="Ganon">
-                    <h2>Calamity Ganon</h2>
-                    <p class="title_description">Calamity Ganon is an ancient evil threatening all of Hyrule—a final test of every weapon, skill, and ounce of courage you've gained.</p>
+                <img src="images/ganon.png" class="ganon_image" alt="Ganon" />
+                <h2>Calamity Ganon</h2>
+                <p class="title_description">Calamity Ganon is an ancient evil threatening all of Hyrule—a final test of every weapon, skill, and ounce of courage you've gained.</p>
                 </div>
 
-
-                    <div class="beast">
-                        <img src="images/lynel.png" class="lynel_image" alt="Lynel">
-                        <h2 class="lynel_name">Lynel</h2>
-                        <p>Weak to headshots and Flurry Rush. Use perfect dodges and stun with arrows for an advantage.</p>
-                    </div>
-        
-                    <div class="beast">
-                        <img src="images/molduga.png" class="mol_image" alt="Molduga">
-                        <h2 class="mol_name">Molduga</h2>
-                        <p>Weak to bombs. Throw a bomb and detonate it when Molduga jumps for maximum damage.</p>
-                    </div>
-
-        
-                    <div class="beast">
-                        <img src="images/yiga.png" class="yiga_image" alt="Yiga Blademaster">
-                        <h2>Yiga Blademaster</h2>
-                        <p>Elite Yiga warrior who uses heavy strikes and teleportation. Lure them into attacking, then dodge to trigger a Flurry Rush.</p>
-                    </div>
-
-        
-                    <div class="beast_different">
-                        <img src="images/monk.png" class="monk_image" alt="Monk Maz Koshia">
-                        <h2>Monk Maz Koshia</h2>
-                        <p>The ancient Sheikah monk who serves as the final trial. Weak to precise Flurry Rushes during his teleport attacks—dodge and counter swiftly.</p>
-                    </div>
-                    <div class="beast_different">
-                        <img src="images/lizalfos.png" class="liz_image" alt="Lizalfos">
-                        <h2>Lizalfos</h2>
-                        <p>Agile and cunning enemies that often appear in groups. Use elemental attacks or Flurry Rush counters to defeat them efficiently.</p>
-                    </div>
+                <div class="beast">
+                <img src="images/lynel.png" class="lynel_image" alt="Lynel" />
+                <h2 class="lynel_name">Lynel</h2>
+                <p>Weak to headshots and Flurry Rush. Use perfect dodges and stun with arrows for an advantage.</p>
                 </div>
+
+                <div class="beast">
+                <img src="images/molduga.png" class="mol_image" alt="Molduga" />
+                <h2 class="mol_name">Molduga</h2>
+                <p>Weak to bombs. Throw a bomb and detonate it when Molduga jumps for maximum damage.</p>
+                </div>
+
+                <div class="beast">
+                <img src="images/yiga.png" class="yiga_image" alt="Yiga Blademaster" />
+                <h2>Yiga Blademaster</h2>
+                <p>Elite Yiga warrior who uses heavy strikes and teleportation. Lure them into attacking, then dodge to trigger a Flurry Rush.</p>
+                </div>
+
+                <div class="beast_different">
+                <img src="images/monk.png" class="monk_image" alt="Monk Maz Koshia" />
+                <h2>Monk Maz Koshia</h2>
+                <p>The ancient Sheikah monk who serves as the final trial. Weak to precise Flurry Rushes during his teleport attacks—dodge and counter swiftly.</p>
+                </div>
+
+                <div class="beast_different">
+                <img src="images/lizalfos.png" class="liz_image" alt="Lizalfos" />
+                <h2>Lizalfos</h2>
+                <p>Agile and cunning enemies that often appear in groups. Use elemental attacks or Flurry Rush counters to defeat them efficiently.</p>
                 </div>
             </div>
-        </main>
-        
-        <script>
-            function showTab(tab) {
-                document.getElementById("characters").style.display = tab === "characters" ? "block" : "none";
-                document.getElementById("beasts").style.display = tab === "beasts" ? "block" : "none";
-        
-                // Update active button
-                document.querySelectorAll(".tab-button").forEach(button => button.classList.remove("active"));
-                document.querySelector(`[onclick="showTab('${tab}')"]`).classList.add("active");
-            }
-        </script>
+        </div>
+      </div>
+    </div>
+  </main>
 
-        
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
-<script>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+  <footer class="site_footer">
+    <div class="footer_links">
+      <p><a href="https://www.youtube.com/watch?v=zw47_q9wbBE&ab_channel=NintendoofAmerica" target="_blank">The Legend of Zelda: Breath of the Wild – Official Trailer</a></p>
+      <p><a href="https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/" target="_blank">Buy on Nintendo's Official Website</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function showTab(tab) {
+      document.getElementById("characters").style.display = tab === "characters" ? "block" : "none";
+      document.getElementById("beasts").style.display = tab === "beasts" ? "block" : "none";
+
+      document.querySelectorAll(".tab-button").forEach(button => button.classList.remove("active"));
+      document.querySelector(`[onclick="showTab('${tab}')"]`).classList.add("active");
+    }
+
+    // Back to Top button
     let mybutton = document.getElementById("myBtn");
 
-    window.onscroll = function() {
+    window.onscroll = function () {
       scrollFunction();
     };
 
@@ -161,12 +159,5 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-    <footer class="site_footer">
-        <div class="footer_links">
-            <p><a href="https://www.youtube.com/watch?v=zw47_q9wbBE&ab_channel=NintendoofAmerica" target="_blank">The Legend of Zelda: Breath of the Wild – Official Trailer</a></p>
-            <p> <a href="https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/?srsltid=AfmBOoqMJUKaNfdbPKFyKcvXLT7IXQmYI71zcPKlgQ7kZmDFsiBTGT5R" target="_blank">Buy on Nintendo's Official Website</a></p>
-        </div>
-    </footer>
-    
 </body>
 </html>

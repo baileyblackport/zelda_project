@@ -34,65 +34,71 @@
         </div>
     </header>
     <main id="main_weapons">
-        <div class="weapon_tabs">
-            <button class="tab-button active" onclick="showWeaponTab('melee')">Melee Weapons</button>
-            <button class="tab-button" onclick="showWeaponTab('bows')">Bows & Ranged</button>
-        </div>
-
-        <div id="melee" class="weapon_tabs">
-            <div class="weapon_grid">
-                <div class="weapon_card">
-                    <img src="images/master_sword.png" class="master_image" alt="Master Sword">
-                    <h3>Master Sword</h3>
-                    <p><strong>Attack Power</strong>: 30 (60 against Ganon)</p>
-                    <p class="weapon_description">The legendary sword of Hyrule, the Master Sword, is a must-have for Link in the final battle against Calamity Ganon.</p>
+        <div class="parallax">
+            <div class="parallax-content">
+                <div class="weapon_tabs">
+                    <button class="tab-button active" onclick="showWeaponTab('melee')">Melee Weapons</button>
+                    <button class="tab-button" onclick="showWeaponTab('bows')">Bows & Ranged</button>
                 </div>
-                <div class="weapon_card">
-                    <img src="images/claymore.png" class="claymore_image" alt="Royal Claymore Sword">
-                    <h3>Royal Claymore Sword</h3>
-                    <p><strong>Attack Power</strong>: 52</p>
-                    <p class="weapon_description">A massive two-handed sword once wielded by the knights of Hyrule. It boasts high attack power and a regal design, making it both deadly and distinguished.</p>
-                </div>
-                <div class="weapon_card">
-                    <img src="images/biggoron_sword.png" class="biggoron_image" alt="Biggoron’s Sword">
-                    <h3>Biggoron’s Sword</h3>
-                    <p><strong>Attack Power</strong>: 60</p>
-                    <p class="weapon_description">A two-handed weapon with incredible damage output, perfect for taking down tough enemies.</p>
-                </div>
-                <div class="weapon_card" id="different">
-                    <img src="images/lynel_sword.png" class="lynel_sword_image" alt="Lynel Sword">
-                    <h3>Lynel Sword</h3>
-                    <p><strong>Attack Power</strong>: 58</p>
-                    <p class="weapon_description">A powerful weapon wielded by Lynels, this sword delivers devastating blows and can be used in both single and dual wielding combat.</p>
+                <div id="melee" class="weapon_tabs">
+                    <div class="weapon_grid">
+                        <div class="weapon_card">
+                            <img src="images/master_sword.png" class="master_image" alt="Master Sword">
+                            <h3>Master Sword</h3>
+                            <p><strong>Attack Power</strong>: 30 (60 against Ganon)</p>
+                            <p class="weapon_description">The legendary sword of Hyrule, the Master Sword, is a must-have for Link in the final battle against Calamity Ganon.</p>
+                        </div>
+                        <div class="weapon_card">
+                            <img src="images/claymore.png" class="claymore_image" alt="Royal Claymore Sword">
+                            <h3>Royal Claymore Sword</h3>
+                            <p><strong>Attack Power</strong>: 52</p>
+                            <p class="weapon_description">A massive two-handed sword once wielded by the knights of Hyrule. It boasts high attack power and a regal design, making it both deadly and distinguished.</p>
+                        </div>
+                        <div class="weapon_card">
+                            <img src="images/biggoron_sword.png" class="biggoron_image" alt="Biggoron’s Sword">
+                            <h3>Biggoron’s Sword</h3>
+                            <p><strong>Attack Power</strong>: 60</p>
+                            <p class="weapon_description">A two-handed weapon with incredible damage output, perfect for taking down tough enemies.</p>
+                        </div>
+                        <div class="weapon_card" id="different">
+                            <img src="images/lynel_sword.png" class="lynel_sword_image" alt="Lynel Sword">
+                            <h3>Lynel Sword</h3>
+                            <p><strong>Attack Power</strong>: 58</p>
+                            <p class="weapon_description">A powerful weapon wielded by Lynels, this sword delivers devastating blows and can be used in both single and dual wielding combat.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="weapon_tabs" id="bows" style="display: none;">
-            <div class="weapon_grid">
-                <div class="weapon_card">
-                    <img src="images/great_eagle_bow.png" class="eagle_image" alt="Great Eagle Bow">
-                    <h3>Great Eagle Bow</h3>
-                    <p><strong>Attack Power</strong>: 28 (or 48 with full pull)</p>
-                    <p class="weapon_description">This bow is known for its long-range shots and is especially useful for aerial attacks.</p>
-                </div>
-                <div class="weapon_card">
-                    <img src="images/ancient_bow.png" class="ancient_image" alt="Ancient Bow">
-                    <h3>Ancient Bow</h3>
-                    <p><strong>Attack Power</strong>: 44</p>
-                    <p class="weapon_description">A powerful bow that shoots multiple arrows at once, effective against Guardians.</p>
-                </div>
-                <div class="weapon_card">
-                    <img src="images/royal_bow.png" class="royal_bow_image" alt="Royal Bow">
-                    <h3>Royal Bow</h3>
-                    <p><strong>Attack Power</strong>: 38</p>
-                    <p class="weapon_description">A bow favored by Hyrule's elite guards. Its fine craftsmanship and balanced build allow for precise shots with high damage—perfect for skilled archers.</p>
-                </div>
-                <div class="weapon_card" id="different">
-                    <img src="images/gaurd_bow.png" class="gaurd_bow_image" alt="Royal Guard's Bow">
-                    <h3>Royal Guard's Bow</h3>
-                    <p><strong>Attack Power</strong>: 60</p>
-                    <p class="weapon_description">A bow crafted by the Royal Guard of Hyrule, known for its high attack power and precision. However, it is fragile and may break after several shots.</p>
+        <div class="parallax">
+            <div class="parallax-content">
+                <div class="weapon_tabs" id="bows" style="display: none;">
+                    <div class="weapon_grid">
+                        <div class="weapon_card">
+                            <img src="images/great_eagle_bow.png" class="eagle_image" alt="Great Eagle Bow">
+                            <h3>Great Eagle Bow</h3>
+                            <p><strong>Attack Power</strong>: 28 (or 48 with full pull)</p>
+                            <p class="weapon_description">This bow is known for its long-range shots and is especially useful for aerial attacks.</p>
+                        </div>
+                        <div class="weapon_card">
+                            <img src="images/ancient_bow.png" class="ancient_image" alt="Ancient Bow">
+                            <h3>Ancient Bow</h3>
+                            <p><strong>Attack Power</strong>: 44</p>
+                            <p class="weapon_description">A powerful bow that shoots multiple arrows at once, effective against Guardians.</p>
+                        </div>
+                        <div class="weapon_card">
+                            <img src="images/royal_bow.png" class="royal_bow_image" alt="Royal Bow">
+                            <h3>Royal Bow</h3>
+                            <p><strong>Attack Power</strong>: 38</p>
+                            <p class="weapon_description">A bow favored by Hyrule's elite guards. Its fine craftsmanship and balanced build allow for precise shots with high damage—perfect for skilled archers.</p>
+                        </div>
+                        <div class="weapon_card" id="different">
+                            <img src="images/gaurd_bow.png" class="gaurd_bow_image" alt="Royal Guard's Bow">
+                            <h3>Royal Guard's Bow</h3>
+                            <p><strong>Attack Power</strong>: 60</p>
+                            <p class="weapon_description">A bow crafted by the Royal Guard of Hyrule, known for its high attack power and precision. However, it is fragile and may break after several shots.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -80,8 +80,19 @@ li a:focus {
     font-size: larger;
 }
 
-iframe {
-    height: 11%;
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
 }
 
 #main_home h1 {
@@ -144,7 +155,7 @@ footer {
 
 .tab-menu {
     text-align: center;
-    padding: 10% 5% 0% 5%;
+    margin: 5%;
 }
 
 .tab-button {
@@ -165,6 +176,30 @@ footer {
 
 .tab-content {
     display: none;
+}
+
+.parallax {
+    background-image: url("../images/dark_green.jpg"); /* Your desired background image */
+    background-attachment: fixed; /* Keeps background fixed during scrolling */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Makes the section height take up the full viewport height */
+    justify-content: center;
+    align-items: center;
+    color: white; /* Adjust text color */
+    overflow: hidden; /* Add this */
+}
+
+.parallax-text {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative; /* Keep it aligned on top of the background */
+    z-index: 2; /* Ensure text stays above the background */
+}
+
+.parallax,
+.parallax-text {
+  height: auto;
 }
 
 #characters_container{
@@ -431,6 +466,10 @@ footer {
     background-image: url("../images/dark_green.jpg");
 }
 
+#melee.weapon_tabs{
+    padding-top: 0;
+}
+
 .weapon_card .master_image{
     width: 40%;
 }
@@ -546,10 +585,13 @@ footer {
     }
 
     .iframe{
-        border-radius: 12px;
-        height: 352;
-        width: 100%;
+        display: none;
     }
+
+    .iframe-container {
+        display: none;
+    }
+
 
     footer{
         font-size: 15px;
@@ -561,7 +603,6 @@ footer {
 
     .tab-menu {
         text-align: center;
-        padding: 0%;
     }
     
 
