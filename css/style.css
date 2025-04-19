@@ -189,14 +189,6 @@ footer {
     overflow: hidden; /* Add this */
 }
 
-.parallax-text {
-    font-size: 2rem;
-    text-align: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    position: relative; /* Keep it aligned on top of the background */
-    z-index: 2; /* Ensure text stays above the background */
-}
-
 .parallax,
 .parallax-text {
   height: auto;
