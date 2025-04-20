@@ -74,6 +74,9 @@ li a:focus {
     align-items: center;
     text-align: center;
     color: darkslategrey; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+
 }
 
 .home_subtitle{
@@ -97,17 +100,25 @@ li a:focus {
 
 #main_home h1 {
     margin: 5% 2% 0% 2%;
-    width: 100%;
+    width: 90%;
     background-color: rgba(255, 255, 255, 0.459);
-    padding-top: 1%;
+    border-top: #636965 solid 5px;
+    border-left: #636965 solid 5px;
+    border-right: #636965 solid 5px;;
+    padding-bottom: 3%;
+    padding-top: 3%;
 }
 
 #main_home h2 {
     background-color: rgba(255, 255, 255, 0.459);
-    margin-top: 0%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 100%;
+    width: 90%;
+    margin: 0% 20% 3% 20%;
+    padding-bottom: 3%;
+    border-left: #636965 solid 5px;
+    border-right: #636965 solid 5px;;
+    border-bottom: #636965 solid 5px;;
+
+
 }
 
 
