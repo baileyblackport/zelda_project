@@ -311,7 +311,7 @@ footer {
     overflow: hidden;
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
-    margin: 10% 10% 0% 10%;
+    margin: 10% 10% 10% 10%;
 }
 
 .character_profile_different img{
@@ -390,7 +390,7 @@ footer {
     position: relative;
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
-    margin: 10% 10% 0% 10%;
+    margin: 10% 10% 10% 10%;
 }
 
 .beast_different img{
@@ -443,7 +443,7 @@ footer {
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
     padding: 5%;
-    margin: 10% 10% 0% 10%;
+    margin: 10% 10% 10% 10%;
 }
 
 .weapon_category img{ 
@@ -456,6 +456,10 @@ footer {
 #main_weapons {
     background-color:rgb(34, 56, 56);
     background-image: url("../images/dark_green.jpg");
+}
+
+#bows.weapon_tabs{
+    padding-top: 0%;
 }
 
 #melee.weapon_tabs{
@@ -595,6 +599,7 @@ footer {
 
     .tab-menu {
         text-align: center;
+        margin-top: 0%;
     }
     
 
@@ -616,6 +621,7 @@ footer {
 
     .character_profile_different{
         border: #7fa08a ridge 25px;
+        margin: 10%;
     }
 
     .character_title h1{
@@ -783,6 +789,7 @@ footer {
         text-align: center;
         padding: 0%
     }
+
     .image_container img{
         border: #7fa08a ridge 25px;
     }
