@@ -537,7 +537,7 @@ footer {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 10px; 
+    right: 20px; 
     z-index: 99; 
     border: none; 
     outline: none; 
