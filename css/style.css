@@ -521,6 +521,7 @@ footer {
 
 .image_container{
     padding: 9% 10% 9% 2%;
+    transition: transform .2s;
 }
 
 .image_container:hover{
