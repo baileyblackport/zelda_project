@@ -180,6 +180,10 @@ footer {
     border-radius: 5px;
 }
 
+.tab-button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .tab-button.active {
     background:#13527a;
     color: rgb(247, 233, 215);
