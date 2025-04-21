@@ -111,17 +111,17 @@ li a:focus {
     background-color: rgba(255, 255, 255, 0.459);
     border-top: #636965 solid 5px;
     border-left: #636965 solid 5px;
-    border-right: #636965 solid 5px;;
-    padding-bottom: 3%;
-    padding-top: 3%;
+    border-right: #636965 solid 5px;
+    padding-bottom: 2%;
+    padding-top: 2%;
     font-family: 'Hylia Serif', serif;
 }
 
 #main_home h2 {
     background-color: rgba(255, 255, 255, 0.459);
     width: 90%;
-    margin: 0% 20% 3% 20%;
-    padding-bottom: 3%;
+    margin: 0% 20% 2% 20%;
+    padding-bottom: 2%;
     border-left: #636965 solid 5px;
     border-right: #636965 solid 5px;;
     border-bottom: #636965 solid 5px;;
