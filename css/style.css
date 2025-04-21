@@ -251,9 +251,6 @@ footer {
 }
 
 
-.character_title h1{
-    font-family: 'Hylia Serif', serif;
-}
 
 
 .character_profile h2{
@@ -463,9 +460,6 @@ footer {
     text-shadow: 2px 2px 20px rgb(19, 32, 32);
 }
 
-.weapons_top h1{
-    font-family: 'Hylia Serif', serif;
-}
 
 .weapon_tabs{
     text-align: center;
@@ -549,7 +543,6 @@ footer {
     text-align: center;
     margin: 3%;
     text-shadow: 2px 2px 20px rgb(19, 32, 32);
-    font-family: 'Hylia Serif';
 }
 
 .image_container p{
@@ -561,6 +554,7 @@ footer {
     width: 100%;
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
+    height: 70%;
 }
 
 .image_container{
