@@ -21,6 +21,11 @@
     margin-left: 10%;
 }
 
+@font-face {
+    font-family: 'Hylia Serif';
+    src: url('./fonts/hylia_serif.otf') format('opentype');
+  }
+
 
 body{
     background-image: url("images/botw_home.jpg");
@@ -56,7 +61,9 @@ li a {
 li a.active {
     text-decoration: underline;
     color:bisque;
-}
+    }
+
+
 
 li a:focus {
     outline: 2px solid #7fa08a;
@@ -107,6 +114,7 @@ li a:focus {
     border-right: #636965 solid 5px;;
     padding-bottom: 3%;
     padding-top: 3%;
+    font-family: 'Hylia Serif', serif;
 }
 
 #main_home h2 {
@@ -167,10 +175,12 @@ footer {
 .tab-menu {
     text-align: center;
     margin-top: 10%;
+    display: flex;
+    justify-content: center;
 }
 
 .tab-button {
-    padding:10px;
+    padding:3%;
     margin: 5px;
     border: none;
     background:rgb(97, 97, 97);
@@ -178,6 +188,9 @@ footer {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .tab-button:hover{
@@ -226,10 +239,6 @@ footer {
    margin: 2%;
 }
 
-.character_title p{
-    font-size: larger;
-}
-
 .character_profile{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -238,20 +247,31 @@ footer {
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
     margin: 10%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+
+.character_title h1{
+    font-family: 'Hylia Serif', serif;
+}
 
 
 .character_profile h2{
-    grid-column: 2/3;
+    grid-column: 1/-1;
     text-align: center;
 }
 
-
 .character_profile p{
+    grid-column:1/-1;
     text-align: center;
-    grid-column: 1/-1;
-    padding: 0% 5% 5% 5%;
+    margin-top: 0%;
+    padding-bottom: 5%;
+}
+
+.character_title p{
+    text-align: center;
+    padding: 0% 5% 0% 5%;
+    font-size: larger;
     margin-top: 0%;
 }
 
@@ -271,6 +291,7 @@ footer {
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
     margin: 10%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .character_profile_different h2{
@@ -363,6 +384,7 @@ footer {
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
     margin: 10%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
 
@@ -406,6 +428,7 @@ footer {
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
     margin: 10% 10% 10% 10%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .beast_different img{
@@ -440,9 +463,14 @@ footer {
     text-shadow: 2px 2px 20px rgb(19, 32, 32);
 }
 
+.weapons_top h1{
+    font-family: 'Hylia Serif', serif;
+}
+
 .weapon_tabs{
     text-align: center;
-    padding-top: 10%;
+    margin-top: 10%;
+
 }
 
 .weapon_tabs.active{
@@ -459,6 +487,7 @@ footer {
     background-color: #4d6155;
     padding: 5%;
     margin: 10% 10% 10% 10%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .weapon_category img{ 
@@ -520,6 +549,7 @@ footer {
     text-align: center;
     margin: 3%;
     text-shadow: 2px 2px 20px rgb(19, 32, 32);
+    font-family: 'Hylia Serif';
 }
 
 .image_container p{
@@ -529,7 +559,6 @@ footer {
 
 .image_container img{
     width: 100%;
-    height: 70%;
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
 }
@@ -543,6 +572,7 @@ footer {
     transform:scale(1.2);
     z-index: 2;
 }
+
 
 .gallery{
     display: grid;
@@ -589,7 +619,7 @@ footer {
     }
 
     #main_home h1{
-        font-size: 35px;
+        font-size: 40px;
     }
 
     #main_home h2{
@@ -614,7 +644,6 @@ footer {
     }
 
     .tab-menu {
-        text-align: center;
         margin-top: 0%;
     }
     
@@ -622,7 +651,7 @@ footer {
     .tab-button{
         font-size: 25px;
         margin: 4% 5% 0% 5%;
-        padding: 2%;
+        padding: 3%;
     }
 
     #characters{
@@ -771,6 +800,7 @@ footer {
         text-shadow: 2px 2px 20px rgb(19, 32, 32);
     }
 
+
     .title_description{
         font-size: 25px;
     }
@@ -803,7 +833,8 @@ footer {
 
     .weapon_tabs{
         text-align: center;
-        padding: 0%
+        padding: 0%;
+        margin-top: 0%;
     }
 
     .image_container img{
