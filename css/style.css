@@ -222,6 +222,13 @@ footer {
   height: auto;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .parallax {
+        animation: none;
+        background-attachment: scroll;
+    }
+}
+
 #characters_container{
     background-image: url("../images/dark_green.jpg");
 }
@@ -280,15 +287,16 @@ footer {
     justify-self: center;
 }
 
-.character_profile_different{
+.character_profile_different {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items:stretch;
+    align-items: stretch;
     overflow: hidden;
     border: #7fa08a ridge 10px;
     background-color: #4d6155;
     margin: 10%;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 
+                0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .character_profile_different h2{
@@ -335,16 +343,6 @@ footer {
     padding-top: 20%;
     padding-right: 35%;
     width: 120%;
-}
-
-.character_profile_different{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items:stretch;
-    overflow: hidden;
-    border: #7fa08a ridge 10px;
-    background-color: #4d6155;
-    margin: 10% 10% 10% 10%;
 }
 
 .character_profile_different img{
@@ -568,6 +566,15 @@ footer {
     z-index: 2;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .image_container {
+        transition: none;
+    }
+
+    .image_container:hover {
+        transform: none;
+    }
+}
 
 .gallery{
     display: grid;
