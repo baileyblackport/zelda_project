@@ -582,24 +582,23 @@ footer {
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
     right: 20px; 
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: #e8ecee9a;; /* Set a background color */
-    color: #13527a;; /* Text color */
+    background-color: #e8eceead;; 
+    color: #13527a;; 
     cursor: pointer;
     padding: 10px; 
     font-size: 18px;
   }
   
   #myBtn:hover {
-    background-color: #a2a1a187; /* Add a dark-grey background on hover */
+    background-color: #a2a1a187; 
   }
-
 
 @media screen and (min-width: 800px){
 
