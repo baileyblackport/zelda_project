@@ -546,7 +546,7 @@ footer {
 
 .image_container p{
     text-align: center;
-    margin-left: 7%;
+    margin-left: 10%;
     margin-top: 2%;
 }
 
@@ -864,6 +864,7 @@ footer {
     .image_container p{
         text-align: center;
         margin-top: 2%;
+        margin-left: 3%;
         font-size: 20px;
     }
     
